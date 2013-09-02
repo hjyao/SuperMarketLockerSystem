@@ -1,6 +1,7 @@
-.nuget/
+
 
 SupermarketLockerSystem/bin/
+
 SupermarketLockerSystem/obj/
 
 SupermarketLockerSystemTest/bin/
