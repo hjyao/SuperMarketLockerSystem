@@ -1,0 +1,9 @@
+C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystemTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\SupermarketLockerSystemTest.exe
+C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\SupermarketLockerSystemTest.pdb
+C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\xunit.xml
+C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystemTest\obj\x86\Debug\SupermarketLockerSystemTest.exe
+C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystemTest\obj\x86\Debug\SupermarketLockerSystemTest.pdb
+C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\SupermarketLockerSystemTest.exe.config
+C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\SupermarketLockerSystem.exe
+C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\SupermarketLockerSystem.pdb
