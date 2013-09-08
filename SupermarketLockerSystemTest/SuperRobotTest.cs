@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using SupermarketLockerSystem;
 using Xunit;
 
@@ -25,6 +26,18 @@ namespace SupermarketLockerSystemTest
             Assert.Equal(expectedBag, bag);
         }
 
+        [Fact]
+        public void should_store_bag_in_max_vacancy_locker()
+        {
+            var locker1 = new Locker(2);
+            var locker2 = new Locker(1);
+            var lockers = new List<Locker> {locker1, locker2};
+            locker1.Store(new Bag());
+
+            var superRobot = new SuperRobot(lockers);
+            superRobot.Store(new Bag());
+            Assert.True(!locker2.IsAvailable);
+        }
     }
 
     public class SuperRobot : Robot
@@ -36,5 +49,12 @@ namespace SupermarketLockerSystemTest
         public SuperRobot(List<Locker> lockers) : base(lockers)
         {
         }
+
+        public new Ticket Store(Bag bag)
+        {
+            var availableLocker = Lockers.Find(l => l.GetVacancy() == Lockers.Max(lo => lo.GetVacancy()));
+            return availableLocker != null ? availableLocker.Store(bag) : null;
+        }
+
     }
 }

@@ -5,16 +5,15 @@ namespace SupermarketLockerSystem
     public class Locker
     {
         public int AvailableBoxesNumber { get; set; }
-        public int GetNum()
-        {
-            return AvailableBoxesNumber;
-        }
+        public int Capacity { get; set; }
+       
         public readonly Dictionary<Ticket, Bag> KeyMapping = new Dictionary<Ticket, Bag>();
         public bool IsAvailable { get; set; }
 
-        public Locker(int availableBoxesNumber)
+        public Locker(int capacity)
         {
-            AvailableBoxesNumber = availableBoxesNumber;
+            Capacity = capacity;
+            AvailableBoxesNumber = capacity;
             IsAvailable = true;
         }
 
@@ -55,5 +54,9 @@ namespace SupermarketLockerSystem
             IsAvailable = AvailableBoxesNumber > 0;
         }
 
+        public long GetVacancy()
+        {
+            return AvailableBoxesNumber/Capacity;
+        }
     }
 }
