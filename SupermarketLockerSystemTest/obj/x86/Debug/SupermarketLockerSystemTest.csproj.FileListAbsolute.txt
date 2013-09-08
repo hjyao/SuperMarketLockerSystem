@@ -7,3 +7,13 @@ C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystemTest\obj\x86\Debug\S
 C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\SupermarketLockerSystemTest.exe.config
 C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\SupermarketLockerSystem.exe
 C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\SupermarketLockerSystem.pdb
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystemTest\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystemTest\obj\x86\Debug\SupermarketLockerSystemTest.exe
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystemTest\obj\x86\Debug\SupermarketLockerSystemTest.pdb
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\SupermarketLockerSystemTest.exe.config
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\SupermarketLockerSystemTest.exe
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\SupermarketLockerSystemTest.pdb
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\SupermarketLockerSystem.exe
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\xunit.dll
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\SupermarketLockerSystem.pdb
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystemTest\bin\Debug\xunit.xml

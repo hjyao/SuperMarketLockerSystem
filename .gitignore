@@ -1,6 +1,8 @@
 
 
-SupermarketLockerSystem/bin/
+SupermarketLockerSystem/bin
+SupermarketLockerSystem/obj
 
+SupermarketLockerSystemTest/bin
 
-SupermarketLockerSystemTest/bin/
+SupermarketLockerSystemTest/obj

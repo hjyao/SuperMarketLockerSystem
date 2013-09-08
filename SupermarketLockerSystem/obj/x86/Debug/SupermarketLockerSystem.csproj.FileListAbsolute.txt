@@ -5,3 +5,10 @@ C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystem\obj\x86\Debug\Super
 C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystem\obj\x86\Debug\SupermarketLockerSystem.pdb
 C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystem\bin\Debug\xunit.dll
 C:\workSpace\SupermarketLockerSystem\SupermarketLockerSystem\bin\Debug\xunit.xml
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystem\obj\x86\Debug\SupermarketLockerSystem.exe
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystem\obj\x86\Debug\SupermarketLockerSystem.pdb
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystem\bin\Debug\SupermarketLockerSystem.exe
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystem\bin\Debug\SupermarketLockerSystem.pdb
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystem\bin\Debug\xunit.dll
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystem\bin\Debug\xunit.xml
+F:\vsWorkSpace\SuperMarketLockerSystem\SupermarketLockerSystem\obj\x86\Debug\ResolveAssemblyReference.cache
