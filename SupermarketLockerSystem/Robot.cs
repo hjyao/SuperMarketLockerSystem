@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace SupermarketLockerSystem
@@ -25,7 +26,12 @@ namespace SupermarketLockerSystem
 
         public Ticket Store(Bag bag)
         {
-            var availableLocker = Lockers.Find(l => l.AvailableBoxesNumber == Lockers.Max(lo => lo.AvailableBoxesNumber));
+            return StoreWithRule(bag, l => l.AvailableBoxesNumber == Lockers.Max(lo => lo.AvailableBoxesNumber));
+        }
+
+        protected Ticket StoreWithRule(Bag bag, Predicate<Locker> action)
+        {
+            var availableLocker = Lockers.Find(action);
             return availableLocker != null ? availableLocker.Store(bag) : null;
         }
 
