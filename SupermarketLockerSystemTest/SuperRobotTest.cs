@@ -35,7 +35,7 @@ namespace SupermarketLockerSystemTest
 
             var superRobot = new SuperRobot(lockers);
             superRobot.Store(new Bag());
-            Assert.True(!locker2.IsAvailable);
+            Assert.False(locker2.IsAvailable);
         }
     }
 }

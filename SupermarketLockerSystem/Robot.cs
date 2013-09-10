@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace SupermarketLockerSystem
@@ -7,18 +6,6 @@ namespace SupermarketLockerSystem
     public class Robot
     {
         protected readonly List<Locker> Lockers;
-        protected readonly int BoxesNumber;
-
-        public Robot(int capacity, int boxesNumber)
-        {
-            BoxesNumber = boxesNumber;
-            Lockers = new List<Locker>(capacity);
-            for (var i = 1; i <= capacity; i++)
-            {
-                Lockers.Add(new Locker(BoxesNumber));
-            }
-        }
-
         public Robot(List<Locker> lockers)
         {
             Lockers = lockers;
@@ -26,13 +13,13 @@ namespace SupermarketLockerSystem
 
         public Ticket Store(Bag bag)
         {
-            return StoreWithRule(bag, l => l.AvailableBoxesNumber == Lockers.Max(lo => lo.AvailableBoxesNumber));
+            var availableLocker = Lockers.Find(GetLocker);
+            return availableLocker != null ? availableLocker.Store(bag) : null;
         }
 
-        protected Ticket StoreWithRule(Bag bag, Predicate<Locker> action)
+        protected virtual bool GetLocker(Locker l)
         {
-            var availableLocker = Lockers.Find(action);
-            return availableLocker != null ? availableLocker.Store(bag) : null;
+            return l.AvailableBoxesNumber == Lockers.Max(lo => lo.AvailableBoxesNumber);
         }
 
         public Bag Pick(Ticket ticket)

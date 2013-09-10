@@ -9,10 +9,9 @@ namespace SupermarketLockerSystem
         {
         }
 
-        public new Ticket Store(Bag bag)
+        protected override bool GetLocker(Locker l)
         {
-            return StoreWithRule(bag, l => l.GetVacancy() == Lockers.Max(lo => lo.GetVacancy()));
+            return l.GetVacancy() == Lockers.Max(lo => lo.GetVacancy());
         }
-
     }
 }
