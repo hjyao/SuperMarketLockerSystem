@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace SupermarketLockerSystem
 {
-    public class SuperRobot : Robot
+    public class SuperRobot : SmartRobot
     {
         public SuperRobot(List<Locker> lockers) : base(lockers)
         {

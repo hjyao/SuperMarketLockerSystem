@@ -13,7 +13,7 @@ namespace SupermarketLockerSystemTest
         {
             var bag = new Bag();
             var lockers = Enumerable.Range(0, 1).Select(i => new Locker(1)).ToList();
-            var robot = new Robot(lockers);
+            var robot = new SmartRobot(lockers);
             
 
             Ticket ticket = robot.Store(bag);
@@ -25,7 +25,7 @@ namespace SupermarketLockerSystemTest
         {
             var expectedBag = new Bag();
             var lockers = Enumerable.Range(0, 1).Select(i => new Locker(1)).ToList();
-            var robot = new Robot(lockers);
+            var robot = new SmartRobot(lockers);
 
             var ticket = robot.Store(expectedBag);
 
@@ -40,7 +40,7 @@ namespace SupermarketLockerSystemTest
             var expectedBag2 = new Bag();
 
             var lockers = Enumerable.Range(0, 3).Select(i => new Locker(2)).ToList();
-            var robot = new Robot(lockers);
+            var robot = new SmartRobot(lockers);
             var ticket1 = robot.Store(expectedBag1);
             robot.Store(expectedBag2);
 
@@ -59,7 +59,7 @@ namespace SupermarketLockerSystemTest
             var bag5 = new Bag();
 
             var lockers = Enumerable.Range(0, 2).Select(i => new Locker(2)).ToList();
-            var robot = new Robot(lockers);
+            var robot = new SmartRobot(lockers);
             robot.Store(bag1);
             robot.Store(bag2);
             robot.Store(bag3);
@@ -72,7 +72,7 @@ namespace SupermarketLockerSystemTest
         public void should_pick_failed_when_given_no_existing_ticket_to_robot()
         {
             var lockers = Enumerable.Range(0, 5).Select(i => new Locker(1)).ToList();
-            var robot = new Robot(lockers);
+            var robot = new SmartRobot(lockers);
             var bag = robot.Pick(new Ticket());
             Assert.Null(bag);
         }
@@ -81,7 +81,7 @@ namespace SupermarketLockerSystemTest
         public void should_pick_failed_when_given_used_ticket_to_robot()
         {
             var lockers = Enumerable.Range(0, 5).Select(i => new Locker(1)).ToList();
-            var robot = new Robot(lockers);
+            var robot = new SmartRobot(lockers);
             var usedTicket = robot.Store(new Bag());
             robot.Store(new Bag());
             robot.Pick(usedTicket);
@@ -95,7 +95,7 @@ namespace SupermarketLockerSystemTest
         public void should_store_failed_when_robot_manange_no_locker()
         {
             var lockers = Enumerable.Range(0, 0).Select(i => new Locker(1)).ToList();
-            var robot = new Robot(lockers);
+            var robot = new SmartRobot(lockers);
             var ticket = robot.Store(new Bag());
             Assert.Null(ticket);
         }
@@ -107,7 +107,7 @@ namespace SupermarketLockerSystemTest
             var locker2 = new Locker(2);
             var lockers = new List<Locker>{locker1, locker2};
 
-            var robot = new Robot(lockers);
+            var robot = new SmartRobot(lockers);
             
             robot.Store(new Bag());
             var ticket = robot.Store(new Bag());
